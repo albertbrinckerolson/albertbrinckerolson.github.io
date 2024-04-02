@@ -4,6 +4,10 @@ title:  "Narative Data story - Simon Urbak Pedersen & Albert Brincker Olson!"
 date:   2024-03-12 11:43:53 +0100
 categories: Assignment 2
 ---
+
+
+![Calendar Plots](Simon.jpg)
+
 <div class="container">
   <div class="column">
     <p>This is the content of column 1.
