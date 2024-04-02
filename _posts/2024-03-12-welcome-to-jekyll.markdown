@@ -22,7 +22,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 <iframe src="/Luksus.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
-    height="100%"
+    height="350"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
