@@ -26,7 +26,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 <embed 
        type="text/html" 
-       src="/docs/Luksus.html"
+       src="Luksus.html"
        width="1100"
        height="600"
        >
