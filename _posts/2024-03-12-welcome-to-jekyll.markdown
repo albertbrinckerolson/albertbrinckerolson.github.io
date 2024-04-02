@@ -6,7 +6,7 @@ categories: Assignment 2
 ---
 
 
-![Calendar Plots](Simon.jpg)
+![Calendar Plots](/Simon.jpg)
 
 <div class="container">
   <div class="column">
