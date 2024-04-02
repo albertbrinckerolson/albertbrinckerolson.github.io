@@ -66,6 +66,11 @@ To gain insight into where the different vehicle types are stolen from, we plot 
 
 Overall, the thefts of different vehicle types are quite similar in terms of their distribution in time and space. The only major difference is the number of occurrences, where automobiles are the most commonly stolen vehicle type, followed by trucks, motorcycles and miscellaneous. 
 
+
+
+Contributions: Albert (s194361) produced the interractive bokeh plot, while Simon (s194655) produced the calendarplot and folium map. The text was written in colaboration by us both. 
+
+
 <style>
 .container {
   display: flex;
