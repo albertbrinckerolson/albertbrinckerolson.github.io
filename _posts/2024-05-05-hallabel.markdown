@@ -79,7 +79,7 @@ First it is clear that the number of sales is subject to much more variation tha
 <iframe src="/Heat_scatter_Map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
-    height="100%"
+    height="700"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -101,7 +101,7 @@ To finish this project we look at the housing market from above - that is, visua
 <iframe src="/Scatter_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
-    height="100%"
+    height="700"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
