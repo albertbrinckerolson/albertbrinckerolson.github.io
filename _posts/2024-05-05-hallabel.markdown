@@ -99,7 +99,13 @@ To finish this project we look at the housing market from above - that is, visua
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
 %CHOROPLETH
+<div class="box">
+  <iframe src="Post2009_map.html" frameborder="0" scrolling="no" width="100%" height="512" align="left"> </iframe>
+</div>
 
+<div class="box">
+  <iframe src="Post2009_map.html" frameborder="0" scrolling="no" width="100%" height="512" align="right"></iframe>
+</div>
 To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean. 
 
 %%Conclusion
