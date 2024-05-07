@@ -91,15 +91,6 @@ To finish this project we look at the housing market from above - that is, visua
 
 
 
-
-
-
-
-
-
-
-
-
 <iframe src="/Scatter_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
@@ -108,14 +99,6 @@ To finish this project we look at the housing market from above - that is, visua
     seamless="seamless"
     frameborder="0">
 </iframe>
-
-
-
-
-
-
-
-
 
 
 
@@ -145,7 +128,7 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
     align= 'right'>
 </iframe>
 </div>
-To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean. 
+To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
 
 %%Conclusion
 
