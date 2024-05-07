@@ -31,7 +31,7 @@ In this project we consider two main factors in the development of the housing m
 
 For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter, and the resulting plot is shown below
 
-<h3 style="text-align:center;"><iframe src="/AvgPrice.html"
+<div style="text-align: center;"><iframe src="/AvgPrice.html"
     sandbox="allow-same-origin allow-scripts"
     width="130%"
     height="500"
@@ -39,7 +39,7 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
     seamless="seamless"
     align = "center"
     frameborder="0">
-</iframe></h3>
+</iframe></div>
 
 
 
