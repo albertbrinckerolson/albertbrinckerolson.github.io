@@ -136,7 +136,10 @@ To end the analysis, we present two choropleth plots of the average sales price 
 Overall, the dataset reveals many interesting things about the Copenhagen housing market. Most strikingly, the average sqm. price is correlated with major events such as Covid-19 pandemic, the 2008 economic crisis and the Russian invasion of Ukraine. The location data of each sale in the dataset is used to show the spatial distribution of the sqm. price. The 2008 financial crash, and the resulting effects on the housing market is visible via the animated maps, as well as the Covid-19 effects. However, the main strength of the animated maps is that they excel at showing the scope of the dataset both in space and time.  
 
 
-
+Contributions: 
+We worked side by side for most of the project, so no clear division of the contributions can be made, however these are our respective main focuses:
+- Albert: Scraping (somewhat reuse of code from a previous project), Bokeh line plots, Writing text.
+- Simon: Animated maps, Writing text.
 
 
 
