@@ -21,7 +21,7 @@ Upon first inspection, it seems that there are some extreme outliers in the data
 
 A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
 
-[BoxPlot_After](/BoksPlot_3_procent.png)
+![BoxPlot_After](/BoksPlot_3_procent.png)
 
 Using scraped data, we do not have an external description of the domain. However, there are some known issues with BBR register: First of all, it is the owners own responsibility to inform to changes to the property, which creates a lot of false information. If a developer buys a large property, ie. apartment complex and sells off the apartments individually, it is likely that one of the apartments will inherit the old registration number. If the apartment complex was bought for 50 million kr. and the falsely registered apartment is 50 sqm. then the sqm price for that apartment will be 500,000 kr in the BBR register REF HERE.
 
