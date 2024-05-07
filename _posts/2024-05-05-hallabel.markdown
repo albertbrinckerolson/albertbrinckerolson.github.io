@@ -37,9 +37,11 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
     height="500"
     scrolling="no"
     seamless="seamless"
-    align = 'center'
+    align = "center"
     frameborder="0">
 </iframe>
+
+
 
 It is clear that in 2007-2008 there is a consistent fall in the sqm. price, both on average and based on individual neighbourhoods. We also see that from 2005-2006 the average sqm. price increases faster than during 2000-2005. This fits well with the classic tale of a housing bubble which inflates before it dramatically bursts. 
 
