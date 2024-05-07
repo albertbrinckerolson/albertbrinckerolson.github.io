@@ -108,7 +108,7 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
 
 %CHOROPLETH
 <div class="box">
-  <iframe src="/Pre2009_map_ny.html"
+  <iframe src="/Pre2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
@@ -120,7 +120,7 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
 </div>
 
 <div class="box">
-  <iframe src="/POST2009_map_ny.html"
+  <iframe src="/Post2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
