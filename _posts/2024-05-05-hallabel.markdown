@@ -5,15 +5,14 @@ date:   2024-05-05 11:43:53 +0100
 categories: Final Project
 ---
 
-%intro
 
 In this project we will take a look at the Copenhagen residential prices from 2000 to 2024. The aim is to gain insight into how the housing prices have changed over time and across space. Notably some important events are contained within our temporal period, mainly the 2008 economic crash and the covid-19 pandemic. 
 
-% Dataset
+
 As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
 
 
-% CLEANING DATA  
+
 
 Upon first inspection, it seems that there are some extreme outliers in the data. A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
 
@@ -107,7 +106,7 @@ To finish this project we look at the housing market from above - that is, visua
 
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
-%CHOROPLETH
+
 
 <div class="container">
   <div class="column">
@@ -137,8 +136,6 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
 
 
 To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
-
-%%Conclusion
 
 
 
