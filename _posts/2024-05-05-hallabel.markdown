@@ -37,6 +37,7 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
     height="500"
     scrolling="no"
     seamless="seamless"
+    align = 'center'
     frameborder="0">
 </iframe>
 
@@ -69,6 +70,7 @@ In the figure below we show the number of sales for each quarter of our time per
     height="500"
     scrolling="no"
     seamless="seamless"
+    align = 'center'
     frameborder="0">
 </iframe>
 
