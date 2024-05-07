@@ -31,7 +31,7 @@ In this project we consider two main factors in the development of the housing m
 
 For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter, and the resulting plot is shown below
 
-<iframe src="/AvgPrice.html"
+<p align="center"><iframe src="/AvgPrice.html"
     sandbox="allow-same-origin allow-scripts"
     width="130%"
     height="500"
@@ -39,7 +39,7 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
     seamless="seamless"
     align = "center"
     frameborder="0">
-</iframe>
+</iframe></p>
 
 
 
@@ -74,7 +74,7 @@ In the figure below we show the number of sales for each quarter of our time per
     seamless="seamless"
     align = 'center'
     frameborder="0">
-</iframe>
+</iframe></p>
 
 
 First it is clear that the number of sales is subject to much more variation than the sqm. price is. Looking at the period leading up to the financial crisis, we see a large increase in the number of sales, which again is part of the classic tale of a housing bubble. Interestingly, the neighbourhood København S is responsible for a large part of this increase. In the early 2000s, the areas of Sydhavnen and Ørestaden (within København S) were rapidly developed, which included a metro connection to Ørestaden in 2002. Therefore a large amount of new houses/residences were put up for sale during this time.
@@ -87,7 +87,7 @@ First it is clear that the number of sales is subject to much more variation tha
     scrolling="no"
     seamless="seamless"
     frameborder="0">
-</iframe>
+</iframe></p>
 
 To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
 
@@ -100,15 +100,14 @@ To finish this project we look at the housing market from above - that is, visua
     scrolling="no"
     seamless="seamless"
     frameborder="0">
-</iframe>
+</iframe></p>
 
 
 
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
 %CHOROPLETH
-<p align="center"><div class="box">
-  <iframe src="/Pre2009_map.html"
+<p align="center"><iframe src="/Pre2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
@@ -116,11 +115,10 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
     seamless="seamless"
     frameborder="0"
     align= 'left'>
-</iframe>
-</div>
+</iframe></p>
 
-<p align="center"><div class="box">
-  <iframe src="/Post2009_map.html"
+
+<p align="center"><iframe src="/Post2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
@@ -128,8 +126,8 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
     seamless="seamless"
     frameborder="0"
     align= 'right'>
-</iframe>
-</div>
+</iframe></p>
+
 To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
 
 %%Conclusion
