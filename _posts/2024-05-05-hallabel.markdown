@@ -13,71 +13,15 @@ In this project we will take a look at the Copenhagen residential prices from 20
 As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
 
 
-![Calendar Plots](/SIMON.jpg)
+% CLEANING DATA  
 
-<div class="container">
-  <div class="column">
-    <p>
-To gain insight into where the different vehicle types are stolen from, we plot the locations on a map of San Francisco, where the thefts are colored by vehicle types. The map is shown below. Upon inspection we see that overall, the 
-    </p>
-  </div>
-  <div class="column">
-    <p>
-     downtown area to the north west is most common among the vehicle thefts. All the thefts the different vehicle types seem to be similarly distributed. The boundary of the dataset, i.e. the police precincts which are included. 
-    </p>
-  </div>
-</div>
+Upon first inspection, it seems that there are some extreme outliers in the data.
+% boxplot før outlier removal
+A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
+% boxplot efter outlier removal
+Using scraped data, we do not have an external description of the domain. However, there are some known issues with BBR register: First of all, it is the owners own responsibility to inform to changes to the property, which creates a lot of false information. If a developer buys a large property, ie. apartment complex and sells off the apartments individually, it is likely that one of the apartments will inherit the old registration number. If the apartment complex was bought for 50 million kr. and the falsely registered apartment is 50 sqm. then the sqm price for that apartment will be 500,000 kr in the BBR register REF HERE.
 
-<iframe src="/ALBERT_SUTTER (1).html"
-    sandbox="allow-same-origin allow-scripts"
-    width="100%"
-    height="350"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
-
-<div class="container">
-  <div class="column">
-    <p>  Another question that arises about the data is which times throughout the day are the vehicles stolen and does this differ from the different vehicle types? The graph below is constructed by counting stolen vehicles of each type within each hour of the day. Overall the thefts are most common between 16:00 to 24:00. 
-    </p>
-  </div>
-  <div class="column">
-    <p>
-      There is also a noticeable spike at 12:00 - 13:00. This is possibly due to 12:00 being a default time for thefts where the time is not known. Looking at the individual vehicles, we see a similar pattern for each of them, with the exception of miscellaneous. This is most likely due to the low number of samples compared to the rest
-    </p>
-  </div>
-</div>
-
-<iframe src="/Luksus.html"
-    sandbox="allow-same-origin allow-scripts"
-    width="100%"
-    height="350"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
-
-Overall, the thefts of different vehicle types are quite similar in terms of their distribution in time and space. The only major difference is the number of occurrences, where automobiles are the most commonly stolen vehicle type, followed by trucks, motorcycles and miscellaneous. 
-
-
-
-Contributions: Albert (s194361) produced the interractive bokeh plot, while Simon (s194655) produced the calendarplot and folium map. The text was written in colaboration by us both. 
-
-
-<style>
-.container {
-  display: flex;
-}
-
-.column {
-  flex: 1;
-  padding: 20px;
-}
-</style>
-
-
-
+Unfortunately, we do not know exactly what observations are outliers due to false information in the BBR. Concequently, the chosen cut-off point of 3% has been made by looking at the boxplot and setting the cut to what seems like a reasonable price range for house prices. Comparing our line plots with those of Boliga REFF HERE done on the same data, we see that they must have removed more outliers since their curve is smoother. Unfortunately, we do not have information on the cleaning scheme, why we decided not to remove other observations than those that seemed highly unlikely.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
