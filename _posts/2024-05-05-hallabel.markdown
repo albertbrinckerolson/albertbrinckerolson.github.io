@@ -66,7 +66,7 @@ The period after the start of the Russian aggression in Ukraine shows how the un
 In the figure below we show the number of sales for each quarter of our time period, both in total and divided across the neighbourhoods, again with the three events highlighted as dashed lines 
 
 
-<iframe src="/NumSales.html"
+<p align="center"><iframe src="/NumSales.html"
     sandbox="allow-same-origin allow-scripts"
     width="130%"
     height="500"
@@ -80,7 +80,7 @@ In the figure below we show the number of sales for each quarter of our time per
 First it is clear that the number of sales is subject to much more variation than the sqm. price is. Looking at the period leading up to the financial crisis, we see a large increase in the number of sales, which again is part of the classic tale of a housing bubble. Interestingly, the neighbourhood København S is responsible for a large part of this increase. In the early 2000s, the areas of Sydhavnen and Ørestaden (within København S) were rapidly developed, which included a metro connection to Ørestaden in 2002. Therefore a large amount of new houses/residences were put up for sale during this time.
 
 
-<iframe src="/Heat_scatter_Map.html"
+<p align="center"><iframe src="/Heat_scatter_Map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
@@ -93,7 +93,7 @@ To finish this project we look at the housing market from above - that is, visua
 
 
 
-<iframe src="/Scatter_map.html"
+<p align="center"><iframe src="/Scatter_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="700"
@@ -107,7 +107,7 @@ To finish this project we look at the housing market from above - that is, visua
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
 %CHOROPLETH
-<div class="box">
+<p align="center"><div class="box">
   <iframe src="/Pre2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
@@ -119,7 +119,7 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
 </iframe>
 </div>
 
-<div class="box">
+<p align="center"><div class="box">
   <iframe src="/Post2009_map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
