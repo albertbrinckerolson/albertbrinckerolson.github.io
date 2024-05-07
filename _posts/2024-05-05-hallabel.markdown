@@ -34,7 +34,7 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
 <iframe src="/AvgPrice.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
-    height="350"
+    height="100%"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -49,7 +49,9 @@ Interestingly, we see that all neighbourhoods follow much of the same trends in 
 
 If we look at the stable period before the financial crisis and compare it to the stable period before COVID-19, there are some similarities between the two. In both these periods, it has been a good investment to buy property with stable returns every year. However, looking at the volatility of the neighborhoods, there are some differences. In the period before the financial crisis, the neighborhoods follow the average salesprice nicely with very few fluctuations. This reflects the belief that all property was a good investment at this time. If we look at the years before covid-19, the prices are more volatile. In this period not all neighborhoods have a steadily increasing sqm. valuation. To examine this further we make a plot of relative price of a sqm. compared to the year before. 
 
-%Relative price change
+![Reldiff_FUCKER_FUCK_FUCCKKKK](/Reldiff.png)
+
+
 This plot reinforces what we saw in the last. It is obvious that there are some similarities between the period before the financial crash and before covid-19, in that both periods have a mainly increasing sqm. price. However, before the financial crisis the price change is almost strictly increasing, reinforcing the bubble behavior. No matter when and for what you bought a property in this time-frame it seemed like a good investment. In the period before covid-19, the relative price change is more varied and includes more negative changes. This could be a reflection of a more healthy housing market for this period, since not all investments have given good returns immediately.
 
 Looking at the period between Covid-19 and the War of Ukraine, it is interesting to note the effect of the pandemic on the housing market. Normally, we would expect uncertain periods to have a mitigating effect on housing prices, but the contrary is the case for the global pandemic. There can be multiple reasons why this is the case. Experts believe that one of the main reasons is the fact that the largest property buying group of residents aged 25-35 was the least effected group economically of the pandemic. Furthermore, this group actually saw an increase in spending power due to not spending money on vacations, going out etc. \ref{DANMARKS STATISTISK}. Combined with the fact that people in general had to stay at home, made this group realize their property plans quicker than they normally would.
