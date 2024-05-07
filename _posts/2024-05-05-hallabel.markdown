@@ -106,7 +106,7 @@ To finish this project we look at the housing market from above - that is, visua
 
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
-
+To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
 
 <div class="container">
   <div class="column">
@@ -133,9 +133,10 @@ To focus on the price, a map of the sqm. price as scatter is also presented. Her
   </div>
 </div>
 
+Overall, the dataset reveals many interesting things about the Copenhagen housing market. Most strikingly, the average sqm. price is correlated with major events such as Covid-19 pandemic, the 2008 economic crisis and the Russian invasion of Ukraine. The location data of each sale in the dataset is used to show the spatial distribution of the sqm. price. The 2008 financial crash, and the resulting effects on the housing market is visible via the animated maps, as well as the Covid-19 effects. However, the main strength of the animated maps is that they excel at showing the scope of the dataset both in space and time.  
 
 
-To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
+
 
 
 
