@@ -33,7 +33,7 @@ For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter
 
 <iframe src="/AvgPrice.html"
     sandbox="allow-same-origin allow-scripts"
-    width="100%"
+    width="130%"
     height="500"
     scrolling="no"
     seamless="seamless"
@@ -61,16 +61,40 @@ The period after the start of the Russian aggression in Ukraine shows how the un
 
 
 In the figure below we show the number of sales for each quarter of our time period, both in total and divided across the neighbourhoods, again with the three events highlighted as dashed lines 
-% plot numsales
+
+
+<iframe src="/NumSales.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="130%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
 
 First it is clear that the number of sales is subject to much more variation than the sqm. price is. Looking at the period leading up to the financial crisis, we see a large increase in the number of sales, which again is part of the classic tale of a housing bubble. Interestingly, the neighbourhood København S is responsible for a large part of this increase. In the early 2000s, the areas of Sydhavnen and Ørestaden (within København S) were rapidly developed, which included a metro connection to Ørestaden in 2002. Therefore a large amount of new houses/residences were put up for sale during this time.
 
 
-%Heatmap
+<iframe src="/Heat_scatter_Map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
 
 To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
 
-%SCATTER
+<iframe src="/Scatter_map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
 
 To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
