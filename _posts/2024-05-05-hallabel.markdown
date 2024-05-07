@@ -17,7 +17,7 @@ As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024
 
 Upon first inspection, it seems that there are some extreme outliers in the data. A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
 
-![BoxPlot_After](/Screenshot 2024-05-07 130859.png)
+![BoxPlot](/image2.png)
 
 
 Using scraped data, we do not have an external description of the domain. However, there are some known issues with BBR register: First of all, it is the owners own responsibility to inform to changes to the property, which creates a lot of false information. If a developer buys a large property, ie. apartment complex and sells off the apartments individually, it is likely that one of the apartments will inherit the old registration number. If the apartment complex was bought for 50 million kr. and the falsely registered apartment is 50 sqm. then the sqm price for that apartment will be 500,000 kr in the BBR register REF HERE.
@@ -60,11 +60,11 @@ First it is clear that the number of sales is subject to much more variation tha
 
 %Heatmap
 
-To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. \\\\
+To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
 
 %SCATTER
 
-To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. \\\\
+To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
 
 %CHOROPLETH
 
