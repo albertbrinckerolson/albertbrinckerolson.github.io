@@ -5,19 +5,13 @@ date:   2024-05-05 11:43:53 +0100
 categories: Final Project
 ---
 
-<div class="container">
-  <div class="column">
-    <p>
-      In this project we analyze the historical Police Incident Reports from DataSaf. This specific dataset is composed of all crimes in San Francisco in the years 2003 to May 2018. For this particular analysis we look specifically at the year 2017 and focus on the crimes of vehicle theft. The dataset has numerous attributes but in this project we are mainly interested in location, time and date of theft, as well as the type of vehicle stolen. The goal is to examine whether there is some pattern in what type of vehicles get stolen where and when. We divide the set of stolen vehicles into 3072 Automobile thefts, 1453 truck thefts, 602 Motorcycle thefts and 57 miscellaneous vehicle thefts. We hope that the analysis will show pattern for each vehicle, showing when and where to expect the highest risk of vehicle theft. We have divided the total into the sub categories because we are predisposed to believe that there will be some difference between them. The search for patterns are done only by data visualization.
-    </p>
-  </div>
-  <div class="column">
-    <p> First of all, we want to examine the distribution of vehicle theft over the year 2017. We do this with a calendar plot. This way we can see whether some months were particularly bad in regards to vehicle theft. Furthermore, a calendar plot can also give some pointers on whether any particular weekday has a higher risk of vehicle theft. 
-From the calendar plots we notice a few patterns. First of all, we notice how the large categories; automobiles and trucks dominate the total number of stolen vehicles. For these two types, it seems that Friday and Saturday are the days with the highest risk of vehicle theft. Moreover, we see that the number of thefts are noticeably lower in November and December. Compared to trucks and automobiles, the motorcycle thefts look
-more evenly distributed over all days of the week. Since there are far less stolen miscellaneous vehicles, it is hard to say anything about that particular calendar plot.
-    </p>
-  </div>
-</div>
+%intro
+
+In this project we will take a look at the Copenhagen residential prices from 2000 to 2024. The aim is to gain insight into how the housing prices have changed over time and across space. Notably some important events are contained within our temporal period, mainly the 2008 economic crash and the covid-19 pandemic. 
+
+% Dataset
+As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
+
 
 ![Calendar Plots](/SIMON.jpg)
 
