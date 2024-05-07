@@ -15,13 +15,124 @@ As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024
 
 % CLEANING DATA  
 
-Upon first inspection, it seems that there are some extreme outliers in the data.
-% boxplot før outlier removal
-A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
-% boxplot efter outlier removal
+Upon first inspection, it seems that there are some extreme outliers in the data. A boxplot of the sqm. price for each neighbourhood shows many sales recorded as having a sqm. price in the millions, which is orders of magnitude above what one would expect. We decided to remove any observations with sqm. price above the 97th percentile, which then gives us a much more appropriate distribution as seen below
+
+![BoxPlot](/image2.png)
+
+
 Using scraped data, we do not have an external description of the domain. However, there are some known issues with BBR register: First of all, it is the owners own responsibility to inform to changes to the property, which creates a lot of false information. If a developer buys a large property, ie. apartment complex and sells off the apartments individually, it is likely that one of the apartments will inherit the old registration number. If the apartment complex was bought for 50 million kr. and the falsely registered apartment is 50 sqm. then the sqm price for that apartment will be 500,000 kr in the BBR register REF HERE.
 
 Unfortunately, we do not know exactly what observations are outliers due to false information in the BBR. Concequently, the chosen cut-off point of 3% has been made by looking at the boxplot and setting the cut to what seems like a reasonable price range for house prices. Comparing our line plots with those of Boliga REFF HERE done on the same data, we see that they must have removed more outliers since their curve is smoother. Unfortunately, we do not have information on the cleaning scheme, why we decided not to remove other observations than those that seemed highly unlikely.
+
+
+In this project we consider two main factors in the development of the housing market, namely the number of sales and sqm. price. 
+
+
+
+For the sqm. meter price, we bin the recorded sales by neighbourhood and quarter, and the resulting plot is shown below
+
+<iframe src="/AvgPrice.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="130%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    align = 'center'
+    frameborder="0">
+</iframe>
+
+It is clear that in 2007-2008 there is a consistent fall in the sqm. price, both on average and based on individual neighbourhoods. We also see that from 2005-2006 the average sqm. price increases faster than during 2000-2005. This fits well with the classic tale of a housing bubble which inflates before it dramatically bursts. 
+
+Althought not as striking, we see evidence of another big global event in the plot; Covid-19. After a 10 year period of steady growth from 2010 to 2020, we see a quick spike in the sqm. price from 2020 to 2021, followed by a stagnant period from 2024 onward. This stagnant period is also significantly more volatile, and the difference from the cheapest neighbourhood to the most expensive neighbourhood grows larger than any other time in our dataset.    
+
+
+Interestingly, we see that all neighbourhoods follow much of the same trends in the price, however the neighbourhood of Nordhavn clearly deviates from the others. This is possibly due to the fact that Nordhavn is a newly developed neighborhood. In general, the sqm. price will depend on numerous factors, such as condition, seaview or access to transportation. For Nordhavn specifically, many if not all apartments are newly build or renovated and have consistent access to value-increasing infrastructure. Therefore the average sales price for this neighborhood is likely higher than a more diverse neighbourhood. This, we also see in the Boxplots, where Nordhavn has by far the most contained distribution. 
+
+If we look at the stable period before the financial crisis and compare it to the stable period before COVID-19, there are some similarities between the two. In both these periods, it has been a good investment to buy property with stable returns every year. However, looking at the volatility of the neighborhoods, there are some differences. In the period before the financial crisis, the neighborhoods follow the average salesprice nicely with very few fluctuations. This reflects the belief that all property was a good investment at this time. If we look at the years before covid-19, the prices are more volatile. In this period not all neighborhoods have a steadily increasing sqm. valuation. To examine this further we make a plot of relative price of a sqm. compared to the year before. 
+
+![Reldiff_FUCKER_FUCK_FUCCKKKK](/Reldiff.png)
+
+
+This plot reinforces what we saw in the last. It is obvious that there are some similarities between the period before the financial crash and before covid-19, in that both periods have a mainly increasing sqm. price. However, before the financial crisis the price change is almost strictly increasing, reinforcing the bubble behavior. No matter when and for what you bought a property in this time-frame it seemed like a good investment. In the period before covid-19, the relative price change is more varied and includes more negative changes. This could be a reflection of a more healthy housing market for this period, since not all investments have given good returns immediately.
+
+Looking at the period between Covid-19 and the War of Ukraine, it is interesting to note the effect of the pandemic on the housing market. Normally, we would expect uncertain periods to have a mitigating effect on housing prices, but the contrary is the case for the global pandemic. There can be multiple reasons why this is the case. Experts believe that one of the main reasons is the fact that the largest property buying group of residents aged 25-35 was the least effected group economically of the pandemic. Furthermore, this group actually saw an increase in spending power due to not spending money on vacations, going out etc. \ref{DANMARKS STATISTISK}. Combined with the fact that people in general had to stay at home, made this group realize their property plans quicker than they normally would.
+
+
+The period after the start of the Russian aggression in Ukraine shows how the uncertainty of the world is reflected in housing market, beginning a period of highly volatile prices and   uncertainty. However, it is hard to say whether this is mainly a stagnation as result of the highly inflated prices under COVID-19 or if it will continue with the progression of the war. 
+
+
+In the figure below we show the number of sales for each quarter of our time period, both in total and divided across the neighbourhoods, again with the three events highlighted as dashed lines 
+
+
+<iframe src="/NumSales.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="130%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    align = 'center'
+    frameborder="0">
+</iframe>
+
+
+First it is clear that the number of sales is subject to much more variation than the sqm. price is. Looking at the period leading up to the financial crisis, we see a large increase in the number of sales, which again is part of the classic tale of a housing bubble. Interestingly, the neighbourhood København S is responsible for a large part of this increase. In the early 2000s, the areas of Sydhavnen and Ørestaden (within København S) were rapidly developed, which included a metro connection to Ørestaden in 2002. Therefore a large amount of new houses/residences were put up for sale during this time.
+
+
+<iframe src="/Heat_scatter_Map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="700"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
+
+
+
+<iframe src="/Scatter_map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="700"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+To focus on the price, a map of the sqm. price as scatter is also presented. Here the most prominent take-away is the colorchange under Covid-19 reflecting the large spike in prices also seen in the line plot. Likewise, the drop in number of sales after the Roskilde Bank bancruptcy is also very visible in this plot. 
+
+%CHOROPLETH
+<div class="box">
+  <iframe src="/Pre2009_map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="700"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0"
+    align= 'left'>
+</iframe>
+</div>
+
+<div class="box">
+  <iframe src="/Post2009_map.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="700"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0"
+    align= 'right'>
+</iframe>
+</div>
+To end the analysis, we present two choropleth plots of the average sales price of each neighborhood before and after 2009. Note that Nordhavn and Østerbro have been combined due to shapefile availability. We invite the property owning reader to examine whether they paid a reasonable price for their property by comparing with the map. These maps show how the neighborhood average were more similar before 2009 compared to after. This too, is a reflection of what we saw in the lineplot with the neighborhood prices being more contained around the mean before the financial crisis. 
+
+%%Conclusion
+
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
