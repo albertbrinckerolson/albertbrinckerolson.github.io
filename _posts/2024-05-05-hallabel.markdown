@@ -6,8 +6,7 @@ categories: Final Project
 ---
 
 
-In this project we will take a look at the Copenhagen residential prices from 2000 to 2024. The aim is to gain insight into how the housing prices have changed over time and across space. Notably some important events are contained within our temporal period, mainly the 2008 economic crash and the covid-19 pandemic. 
-
+In this project we will take a look at the Copenhagen residential prices from 2000 to 2024. The aim is to gain insight into how the housing prices have changed over time and across space. Notably some important events are contained within our temporal period, mainly the 2008 economic crash and the covid-19 pandemic. The explainer notebook can be found <a href="https://github.com/albertbrinckerolson/albertbrinckerolson.github.io/blob/temp/Exam_Notebook_lorteversion.ipynb">here</a> 
 
 As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
 
