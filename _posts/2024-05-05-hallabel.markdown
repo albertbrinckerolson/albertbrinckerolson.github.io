@@ -79,7 +79,7 @@ In the figure below we show the number of sales for each quarter of our time per
 
 First it is clear that the number of sales is subject to much more variation than the sqm. price is. Looking at the period leading up to the financial crisis, we see a large increase in the number of sales, which again is part of the classic tale of a housing bubble. Interestingly, the neighbourhood København S is responsible for a large part of this increase. In the early 2000s, the areas of Sydhavnen and Ørestaden (within København S) were rapidly developed, which included a metro connection to Ørestaden in 2002. Therefore a large amount of new houses/residences were put up for sale during this time.
 
-
+To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. 
 <div style="text-align: center;"><iframe src="/Heat_scatter_Map.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
@@ -89,7 +89,7 @@ First it is clear that the number of sales is subject to much more variation tha
     frameborder="0">
 </iframe></div>
 
-To finish this project we look at the housing market from above - that is, visualizing it through maps. To start off, we show a density heatmap done on the whole period. This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
+This map has the ability to show a combination of the prices and the number of sales. Bright spots on the map can thus both be a reflection of both a large sqm. price and a large density of sales. The financial crisis is easily observable in this map by the prominent change in color in the period just before the peak and after the Roskilde Bank bankruptcy. This is also true for the covid spike and subsequent invasion of Ukraine. 
 
 
 
