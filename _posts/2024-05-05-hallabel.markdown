@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Narative Data story - Simon Urbak Pedersen & Albert Brincker Olson!"
-date:   2024-04-02 11:43:53 +0100
-categories: Assignment 2
+title:  "Final Project Datavis- Simon Urbak Pedersen & Albert Brincker Olson!"
+date:   2024-05-05 11:43:53 +0100
+categories: Final Project
 ---
 
 <div class="container">
